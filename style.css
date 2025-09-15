@@ -1,85 +1,89 @@
-@font-face {
-    font-family: 'kanit';
-    src: url('assets/Kanit-Regular.ttf') format('ttf'),
+body {
+    font-family: Comic Sans MS, sans-serif;
+    color: #333;
+    background: linear-gradient(blue , gray);
+    text-align: center;
 }
 
-.main {
-    color: antiquewhite;
-    font-family: 'kanit', sans-serif;
-    background: linear-gradient(to right, #111f42, #0f172a);
-
+header {
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
 }
 
-#myName {
-    font-size: 80px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-
-    background: linear-gradient(to right, #fae7af, #ff6b08,#e2ca8c, #bc9b54);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 20px;
 }
 
-.intro {
-    color: #8e9cb6;
-    margin-bottom: 0px;
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
-.grid-container {
+.name {
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2rem;
+}
+
+.about p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.course-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* Creates 3 equal columns */
-    grid-template-rows: repeat(5, 1fr);     /* Creates 3 equal rows */
-    gap: 10px;                              /* Space between grid items */
-    height: 200vh;                          /* Set grid height */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
-/* Merge top-left 2x2 cells */
-.item1 {
-    grid-column: 1 / 3;  /* Span 2 columns */
-    grid-row: 2 / 4;     /* Span 2 rows */
-    padding-left: 25vh;
-    padding-top: 10vh;
-}
-
-.headshot {
-    grid-column: 3 / 4;
-    grid-row: 2 / 4;
-    padding-right: 20vh;
-}
-
-.about {
-    grid-row: 4 / 6;
-    grid-column: 1 / 4;
-    padding-left: 15vh;
-    padding-right: 15vh;
+.course-card {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
     text-align: center;
+    transition: transform 0.3s ease;
 }
 
-.section {
-    text-align: center;
-    font-size: 10vh;
+.course-card:hover {
+    transform: translateY(-5px);
 }
 
-.list {
-    display: flex;
-    justify-content: space-evenly;
+.course-card h3 {
+    color: #667eea;
+    margin-bottom: 10px;
 }
 
-.listItem {
-    flex: 1;
-    text-align: center;
-}
-
-.courseName {
-    text-align: center;
-}
-
-.connect {
+.social-links {
     display: flex;
     justify-content: center;
+    gap: 30px;
 }
 
-.media {
-    margin: 5vh;
+.social-links a:hover {
+    transform: scale(1.2);
 }
