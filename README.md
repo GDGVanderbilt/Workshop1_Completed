@@ -12,11 +12,11 @@ Welcome to the **Portfolio Website Workshop**! This hands-on session will teach 
 
 ## What You'll Accomplish
 By the end of this workshop, you'll have created:
-- ✅ A professional portfolio homepage
-- ✅ Responsive design that works on mobile and desktop
-- ✅ Modern styling with gradients and animations
-- ✅ Clean, semantic HTML structure
-- ✅ A live website you can share with others (if time permits)
+- A professional portfolio homepage
+- Responsive design that works on mobile and desktop
+- Modern styling with gradients and animations
+- Clean, semantic HTML structure
+- A live website you can share with others (if time permits)
 
 ## Project Structure
 ```
